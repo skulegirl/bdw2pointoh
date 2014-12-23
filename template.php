@@ -64,3 +64,13 @@ function bdw2pointoh_preprocess_block(&$vars) {
 function bdw2pointoh_process_block(&$vars) {
 }
 // */
+
+
+/**
+ * Override logintoboggan theme functions for the login block
+ * specifically, remove references to registering
+ */
+function bdw2pointoh_lt_login_link($variables) {
+  return t('Login');
+}
+

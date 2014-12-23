@@ -7,3 +7,684 @@
  * remember to update the name in the info file
  * as well.
  */
+
+/*****************/
+/* Page Settings */
+/*****************/
+
+#content-wrapper {
+  border: none;
+  padding-bottom: 5px;
+}
+
+#footer-wrapper {
+  border: none;
+}
+
+a:link, a:visited, a:active, a.active, li a.active {
+  font-weight: bold;
+}
+
+h2.pane-title {
+  font-size: xx-large;
+  text-align: center !important;
+}
+
+/****************/
+/* Header Items */
+/****************/
+
+/* General Header settings 
+----------------------------------------------- */
+.hl-l .region-header .block {
+  vertical-align: top;
+  display: block;
+}
+
+.hl-l .region-header {
+  width: calc(100% - 300px); /* room for logo */
+}
+
+#header-wrapper .block-logintoboggan {
+  float: right;
+}
+
+#header-wrapper nav .block-inner {
+  float: right;
+}
+
+/* Menus
+---------*/
+
+.mean-container .mean-bar,
+.mean-container .mean-nav {
+  background-color: #3B4520;
+}
+
+.mean-container a.meanmenu-reveal span{
+  background-color: white;
+}
+
+.mean-container .mean-nav ul li a{
+  color: white;
+}
+
+/* Social Icons 
+----------------------------------------------- */
+a.social-icons img {
+  vertical-align: middle;
+}
+
+a.social-icons {
+  margin-right: 5px; /*Adjust This Value As Needed*/
+}
+
+a.social-icons:hover {
+  opacity: .7;
+  filter:alpha(opacity=70); /* For IE8 and earlier */
+}
+
+/* Search Bar
+----------------------------------------------- */
+#block-google-cse-google-cse label {
+  visibility: hidden;
+  height: 0px;
+}
+
+#google-cse-results-searchbox-form input {
+  border-color: #3b4520;
+  color: #3b4520;
+}
+
+#google-cse-results-searchbox-form input.form-text {
+  width: 180px; 
+  background: none !important;
+  margin-bottom: 10px;
+}
+
+
+/* Login Link
+----------------------------------------------- */
+/* 
+ * No longer needed - using sliding draw instead for login
+
+#block-user-login a {
+  color: #3b4520;
+}
+
+#block-user-login a:hover {
+  opacity: .7;
+  filter:alpha(opacity=70); // For IE8 and earlier 
+}
+*/
+
+/**********************/
+/* Sliding Draw Items */
+/**********************/
+
+/* Login Link
+----------------------------------------------- */
+
+#draw-wrapper #block-user-login {
+  max-width: 100%;
+  float: right;
+}
+
+#draw-wrapper #block-user-login .form-item {
+}
+
+#draw-wrapper #block-user-login .form-actions input {
+  color: white;
+  background: inherit;
+  font-weight: bold;
+  border-width: 2px;
+  font-size: medium;
+}
+
+
+/****************/
+/* Logo Items  */
+/****************/
+
+#branding {
+  margin: 0px 10px;
+  width: 250px;
+}
+
+/****************/
+/* Landing Page */
+/****************/
+
+/* Top level 
+-----------*/
+#page #content-wrapper {
+  padding-top: 3em;
+}
+
+.page-landing-page #block-system-main {
+  margin-bottom: 5px;
+}
+
+.HomePageButton {
+  padding: 10px;
+  background-color: #3b4520;
+  color: #ffffff !important;
+}
+
+a.HomePageButton:hover {
+  opacity: .7 !important;
+  filter:alpha(opacity=70) !important; /* For IE8 and earlier */
+}
+
+/* Featured Host Slider
+-------------------------*/
+.view-featured-host-slideshow .featured-host-image {
+  float: left;
+  padding-right: 10px;
+}
+
+/* Main Headline */
+#MainHeadline {
+  background: url(/sites/boondockerswelcome.com/files/media/LandingPageImages/TheGroveBanner.jpg) center;
+  height: 350px;
+}
+
+#MainHeadline h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding-top: 20px;
+  color: white;
+}
+
+#MainHeadline h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+  color: white;
+}
+
+@media screen and (min-width:1000px) {
+#MainHeadline h1 {
+  font-size: 55px;
+}
+#MainHeadline h2 {
+  font-size: 40px;
+}
+}
+
+@media screen and (min-width:830px) and (max-width:1000px) {
+#MainHeadline h1 {
+  font-size: 45px;
+}
+#MainHeadline h2 {
+  font-size: 35px;
+}
+}
+
+@media screen and (min-width:600px) and (max-width:830px) {
+#MainHeadline h1 {
+  font-size: 40px;
+}
+#MainHeadline h2 {
+  font-size: 30px;
+}
+}
+
+@media screen and (max-width:600px) {
+#MainHeadline h1 {
+  font-size: 35px;
+}
+#MainHeadline h2 {
+  font-size: 28px;
+}
+}
+
+
+/* Landing Page Map
+--------------------*/
+#LandingPageMapBlock {
+  background-color: #f0d290;
+  padding: 20px 10px;
+}
+#LandingPageMapBlock .node{
+  margin-bottom: 0px;
+}
+
+#LandingPageMapBlock .map-panel-buttons {
+  margin-top: 20px;
+}
+
+#HomeMapImg img{
+  float: right;
+  width: 650px;
+  padding-left: 10px;
+}
+
+#HomeMapText h2 {
+  line-height: 1.1em;
+  padding-bottom: 5px;
+}
+
+#HomeMapText h4 {
+  line-height: 1.2em;
+  padding-bottom: 5px;
+}
+
+@media screen and (min-width:1000px) {
+  #HomeMapText {
+    padding-top: 120px;
+  }
+}
+@media screen and (min-width:880px) and (max-width:1000px) {
+  #HomeMapText {
+    padding-top: 80px;
+  }
+}
+
+@media screen and (max-width:835px) {
+  #HomeMapImg img {
+    float: none;
+    width: 100%;
+    padding-left: 0px
+  }
+}
+
+/* Benefits Block 
+-------------------*/
+
+#mini-panel-landing_page_benefit_panes .block {
+  max-width: 700px;
+  margin: auto;
+  padding: 10px 0;
+}
+
+#mini-panel-landing_page_benefit_panes .panel-separator {
+  border-bottom: 1px grey solid;
+  max-width: 700px;
+  margin: auto;
+}
+
+#mini-panel-landing_page_benefit_panes article.odd .BenefitImage img {
+  float: left;
+  padding-right: 20px;
+}
+
+#mini-panel-landing_page_benefit_panes article.even .BenefitImage img {
+  float: right;
+  padding-left: 20px;
+}
+
+
+#mini-panel-landing_page_benefit_panes .block,
+#mini-panel-landing_page_benefit_panes .node {
+  margin-bottom: 0px;
+}
+
+
+#mini-panel-landing_page_benefit_panes .BenefitsText {
+  padding-bottom: 10px;
+}
+#mini-panel-landing_page_benefit_panes .pane-title,
+#mini-panel-landing_page_benefit_panes .CallToAction {
+  text-align: center;
+}
+
+
+
+/* Testimonials and Fetured Hosts Block 
+--------------------------------------*/
+
+.TestimonialsPane {
+  background-color: #f2c836;
+  padding: 20px 10px;
+}
+
+.TestimonialsPane .block-title {
+  font-size: x-large;
+  text-align: center;
+}
+
+.TestimonialsPane .TestimonialContainer {
+  clear: both;
+}
+
+.TestimonialsPane .TestimonialImage {
+  float: left;
+  padding-right: 15px;
+  width: 100px;
+}
+
+.TestimonialsPane .TestimonialTitle {
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: large;
+}
+
+.TestimonialsPane .TestimonialAuthor {
+  text-align: right;
+  width: 90%;
+  font-weight: bold;
+  font-style: italic;
+  padding-bottom: 15px;
+  padding-top: 5px;
+}
+
+.TestimonialsPane .TestimonialContainer.last .TestimonialAuthor {
+  padding-bottom: 0px;
+}
+
+.TestimonialsPane .node {
+  margin-bottom: 0px;
+}
+
+/* How it works block 
+--------------------*/
+#HowItWorks h2.pane-title {
+  text-align: center;
+}
+
+#HowItWorks .block-content {
+  text-align: center;
+}
+
+#HowItWorks img {
+  height: 130px;
+}
+
+#HowItWorks .pane-title {
+  padding-bottom: 10px;
+  font-size: xx-large;
+}
+
+/* As Featured In
+--------------------*/
+
+#AsFeaturedInTitle {
+ text-align: center;
+ font-size: 2em;
+ font-weight: bold;
+ width: 240px;
+ margin: auto;
+ border-bottom: #3b4520 6px double;
+ margin-bottom: 10px;
+ color: #3b4520;
+}
+
+#AsFeaturedInContent {
+  text-align: center;
+}
+
+.AsFeaturedInLogo {
+  display: inline;
+}
+
+.AsFeaturedInLogo img{
+ padding: 10px;
+ height: 50px;
+}
+
+#as-seen-in .block-content {
+ text-align: center;
+}
+
+#as-seen-in {
+  margin-bottom: 5px;
+}
+
+/* Proud Member of Block
+--------------------*/
+
+#proud-member-of .pane-title {
+  text-align: center;
+}
+
+.ProudMemberOfImg img {
+  padding: 10px;
+  height: 80px;
+}
+
+.ProudMemberOfImg {
+  display: inline;
+}
+
+#ProudMemberOfContent {
+  text-align: center;
+}
+
+/* Guarantee Block */
+#SatisfactionGuaranteed img {
+  float: left;
+  padding-right: 10px;
+  height: 150px;
+}
+
+
+/****************/
+/* User Page    */
+/****************/
+
+.page-user .pane-boondocking-available-parent {
+  border-radius: 7px;
+  background-color: #eeeeee;
+  padding: 10px;
+}
+
+.page-user .pane-boondocking-available-parent .pane-title,
+.page-user .pane-user-about .pane-title {
+  text-align: center;
+  font-size: xx-large;
+}
+
+.page-user .pane-boondocking-available-parent .block-content .pane-title, 
+.page-user .pane-user-about .block-content .pane-title {
+  text-align: left;
+  font-size: x-large;
+}
+
+
+.page-user #block-system-main .row-1 {
+  margin: 5px;
+}
+
+.views-field-field-user-photo img {
+  float: left;
+  padding-right: 5px;
+}
+
+/****************/
+/* Maps         */
+/****************/
+
+@media screen and (min-width:800px) {
+  .AllUserMapView .gmap-control {
+    height: 500px !important;
+  }
+}
+@media screen and (max-width:475px) {
+  .AllUserMapView .gmap-control {
+  }
+}
+
+/*****************/
+/*   General     */
+/*****************/
+.node.article {
+  margin-bottom: 0px;
+}
+
+/* Node title and pane title both appear on nodes... just want pane title */
+.node-title {
+  visibility: hidden;
+  height: 0px;
+}
+
+/*****************/
+/* User Profiles */
+/*****************/
+
+.views-label {
+  font-size: 1.2em;
+  font-weight: 700;
+  font-family: 'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  color: #3B4520;
+}
+
+/* Services Icons and legend */
+
+.ServiceIcon {
+  display: inline-block;
+  padding: 0px 5px;
+}
+
+.ServiceIcon img {
+  width: 60px;
+}
+
+.SiteServicesLegend .ServiceIcon {
+  display: table;
+}
+
+.SiteServicesLegend .ServiceIcon img{
+  width: 45px;
+  float: left;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width:1121px) {
+  .ServiceIcon img{
+    width: 40px;
+  }
+}
+
+
+  
+
+.ServiceIcon.NotAvailable {
+  opacity: 0.10;
+  -ms-filter:”progid:DXImageTransform.Microsoft.Alpha(Opacity=10)”; /* ie 8 */
+  filter: alpha(opacity=10); /* ie lt 7 */
+  -khtml-opacity: .10; /* safari 1.x */
+  -moz-opacity: .10; /* ff lt 1.5, netscape */
+}
+.SiteProvides,
+.SiteWelcomes {
+  position: relative;
+}
+
+.SiteServices h2.NoServices {
+  position: absolute;
+  top: 20%;
+  font-style: italic;
+  opacity: 0.8;
+  width: 100%;
+  text-align: center;
+}
+
+.SiteDetails .RVCount,
+.SiteDetails .RVSize,
+.SiteDetails .MaxNights {
+  position: relative;
+}
+
+.SiteDetails .RVCount h3, 
+.SiteDetails .RVSize h3,
+.SiteDetails .MaxNights h3 {
+  position: absolute;
+  top: 0px;
+  width: 85%;
+  text-align: center;
+  color: white;
+  font-size: 17px;
+}
+
+.SiteDetails .RVCount.LegendIcon h3, 
+.SiteDetails .RVSize.LegendIcon h3,
+.SiteDetails .MaxNights.LegendIcon h3 {
+  font-size: 12px;
+  left: 17px;
+  width: inherit;
+  text-align: left;
+}
+
+.SiteSerivcesLegend {
+  width: 280px;
+}
+
+.LegendIcon {
+  float: left;
+  display: block;
+  width: 140px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.LegendText {
+  font-size: 15px;
+}
+
+.LegendHeader {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.pane-bda-details-d7-panel-pane-1 {
+  padding-top: 40px;
+}
+
+@media screen and (max-width:480px) {
+  .pane-bda-details-d7-panel-pane-1 {
+    padding-top: 0px;
+  }
+}
+
+.pane-user-recommendations-and-respons {
+  border-radius: 7px;
+  background-color: #eeeeee;
+  padding: 10px;
+}
+
+.adr .region {
+  float: inherit !important;
+}
+
+section.pane-user-about {
+  padding-top: 20px;
+}
+
+/*****************
+ * Search Listings Page *
+ ************************/
+
+.SearchMethods {
+  padding-top: 10px;
+}
+
+.SearchMethod {
+  padding: 5px;
+}
+
+.SearchMethod a {
+  font-size: x-large;
+}
+
+.SearchMethod img {
+  float: left;
+  padding: 5px 15px 2px 0px;
+}
+
+.SearchMethodDescription {
+  min-height: 140px;
+}
+
+@media screen and (max-width: 640px) {
+  .SearchMethod img {
+    width: 75px;
+  }
+  .SearchMethodDescription {
+    min-height: 85px;
+  }
+}
+
+
