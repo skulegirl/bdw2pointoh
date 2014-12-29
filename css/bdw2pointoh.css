@@ -25,9 +25,34 @@ a:link, a:visited, a:active, a.active, li a.active {
   font-weight: bold;
 }
 
-h2.pane-title {
+h2.pane-title.block-title,
+.pta-l h1#page-title,
+h1#page-title,
+h1.node-title {
   font-size: xx-large;
-  text-align: center !important;
+  text-align: center;
+}
+
+.panel-pane h2.pane-title.block-title {
+  text-align: left;
+}
+
+.pane-boondocking-available-parent h2.pane-title.block-title, 
+.pane-user-about h2.pane-title.block-title {
+  text-align: center;
+}
+
+.pane-boondocking-available-parent .block-content h2.pane-title.block-title,
+.pane-user-about .block-content h2.pane-title.block-title {
+  text-align: left;
+}
+
+
+input#edit-submit {
+  padding: 5px 20px;
+  font-size: large;
+  color: #3b4520;
+  border: 1px solid #3b4520;
 }
 
 /****************/
@@ -476,7 +501,8 @@ a.HomePageButton:hover {
   font-size: xx-large;
 }
 
-.page-user .pane-boondocking-available-parent .block-content .pane-title, 
+.block-content .pane-title,
+.pane-boondocking-available-parent .block-content .pane-title, 
 .page-user .pane-user-about .block-content .pane-title {
   text-align: left;
   font-size: x-large;
@@ -514,10 +540,10 @@ a.HomePageButton:hover {
 }
 
 /* Node title and pane title both appear on nodes... just want pane title */
-.node-title {
+/* .node-title 
   visibility: hidden;
   height: 0px;
-}
+} */
 
 /*****************/
 /* User Profiles */
@@ -688,3 +714,41 @@ section.pane-user-about {
 }
 
 
+/*************************
+ * How it Works  Page *
+ ************************/
+
+.HowItWorks {
+  padding-top: 10px;
+}
+
+.HowItWorksItem {
+  padding: 5px;
+  border: 1px grey solid;
+  margin: 20px 5px;
+  background-color: #eeeeee;
+  border-radius: 10px;
+}
+
+.HowItWorksTitle {
+  font-size: x-large;
+}
+
+.HowItWorksImg img {
+  float: left;
+  width: 150px;
+  padding: 5px 15px 2px 0px;
+}
+
+.HowItWorksText {
+  min-height: 140px;
+}
+
+@media screen and (max-width: 640px) {
+  .HowItWorksImg img {
+    width: 75px;
+  }
+  .HowItWorksText {
+    min-height: 85px;
+  }
+}
