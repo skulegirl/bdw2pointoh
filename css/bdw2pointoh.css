@@ -176,6 +176,38 @@ a.social-icons:hover {
   width: 250px;
 }
 
+/*****************/
+/* Tabs          */
+/*****************/
+
+#tasks ul {
+  border-bottom: 1px solid #dddddd;
+  margin-bottom: 5px;
+}
+
+#tasks li.active,
+#tasks li.active-parent a {
+  border: 1px solid #dddddd;
+  border-bottom: 0px;
+  border-radius: 7px 7px 0 0;
+  background-color: white;
+}
+
+#tasks li.active a.active,
+#tasks li.active-parent a {
+  padding: 5px 8px 10px 8px;
+  margin-right: 0;
+}
+
+#tasks ul li {
+  float: left;
+  margin-bottom: -1px;
+}
+
+#tasks ul li a {
+  padding: 4px 12px 5px 12px;
+}
+
 /****************/
 /* Landing Page */
 /****************/
@@ -489,6 +521,11 @@ a.HomePageButton:hover {
 /* User Page    */
 /****************/
 
+.page-user h1#page-title {
+  border-bottom: 1px grey solid;
+  margin-bottom: 20px;
+}
+
 .page-user .pane-boondocking-available-parent {
   border-radius: 7px;
   background-color: #eeeeee;
@@ -535,6 +572,42 @@ a.HomePageButton:hover {
 /*****************/
 /*   General     */
 /*****************/
+.cta-button {
+  margin-top: 35px;
+  text-align: center;
+}
+
+.cta-button a {
+  padding: 10px 20px;
+  border: 1px solid #3b4520;
+  border-radius: 6px;
+  background-color: #70833d;
+  margin: 10px;
+  color: white;
+  white-space:nowrap;
+}
+
+@media screen and (max-width:410px)
+{
+  .cta-button a {
+    font-size: large;
+  }
+}
+@media screen and (min-width: 411px)
+{
+  .cta-button a {
+    font-size: x-large;
+  }
+}
+
+
+.cta-button a:focus,
+.cta-button a:hover {
+  -moz-box-shadow: 0 0 10px 5px rgba(112, 131, 61, 0.5);
+  -webkit-box-shadow: 0 0 10px 5px rgba(112, 131, 61, 0.5);
+  box-shadow: 0 0 10px 5px rgba(112, 131, 61, 0.5);
+}
+
 .node.article {
   margin-bottom: 0px;
 }
@@ -544,6 +617,32 @@ a.HomePageButton:hover {
   visibility: hidden;
   height: 0px;
 } */
+
+
+  /* Enable scroll bars (do not hide them) in chrome */
+  .view-searchlocationresults ::-webkit-scrollbar,
+  .view-listings-by-state ::-webkit-scrollbar {
+        -webkit-appearance: none;
+  }
+  ::-webkit-scrollbar:vertical {
+        width: 11px;
+  }
+
+  ::-webkit-scrollbar:horizontal {
+        height: 11px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+        border-radius: 8px;
+            border: 2px solid #ccc; /* should match background, can't be transparent */
+                background-color: rgba(0, 0, 0, .5);
+  }
+
+  ::-webkit-scrollbar-track {
+        background-color: #ccc;
+            border-radius: 8px;
+  }
+
 
 /*****************/
 /* User Profiles */
@@ -751,4 +850,190 @@ section.pane-user-about {
   .HowItWorksText {
     min-height: 85px;
   }
+}
+
+/*******************************
+/* Search Results Formatting */
+/*******************************/
+
+/**Search Result formatting **/
+  .section-searchlistings .attachment-before
+  {
+    padding: 0px 10px 0px 0px;
+  }
+
+  .view-display-id-attachment_1
+  {
+    padding: 0;
+    margin: 0 0 -10px 0;
+    border: solid #555555 5px;
+  }
+
+
+  .search-results
+  {
+    min-height: 200px;
+  }
+
+  .search-results .view-content .item-list
+  {
+/*    height: 600px; */
+    overflow: auto;
+    padding: 5px;
+    font-size: 12px;
+    margin-top: 10px;
+    /* line-height: 1.3em; */
+  }
+
+  .search-results li {
+    margin-left: 5px;
+  }
+
+  .search-results ul
+  {
+    list-style-type: none;
+  }
+
+  .search-results .item-list ul li
+  {
+    padding: 0 0 10px 0;
+  }
+
+  .search-results .item-list .field-content
+  {
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+
+  .attachment .search-results .item-list .pager
+  {
+    display: none;
+  }
+
+@media screen and (max-width: 539px) {
+  .search-results .attachment {
+    float: none;
+    margin: 0 10px;
+  }
+
+  .search-results .view-content .item-list {
+    min-width: none;
+    float: none;
+    height: inherit;
+  }
+}
+@media screen and (min-width: 540px) {
+  .search-results .attachment
+  {
+    float: right;
+    width: 70%;
+  }
+  
+  .search-results .view-content .item-list { 
+    width: 28%;
+    float: left;
+  }
+}
+
+
+  .search-results .item-list .pager
+  {
+    color: blue;
+    font-size: 20px;
+    padding: 20px 0 0 0;
+  }
+
+  .search-results .item-list .pager a
+  {
+    color: #3B4520;
+    font-size: 20px;
+    padding: 0px 5px;
+  }
+
+  .search-results .item-list .pager-current 
+  {
+    color: grey;
+    font-weight: normal;
+    padding: 0px 5px;
+  }
+
+
+  .search-results .views-field-field-user-photo-fid
+  {
+    float: right;
+/*    width: 200px; */
+    padding: 5px;
+    overflow: hidden;
+  }
+
+  #Search-The-Boondocking-Listings {
+  }
+
+  #Search-The-Boondocking-Listings table {
+    border: none;
+  }
+
+  #Search-The-Boondocking-Listings table td {
+    padding: 5px;
+  }
+
+  #Search-The-Boondocking-Listings img {
+  }
+
+  .search-results .views-field-field-user-photo-fid
+  {
+    float: right;
+/*    width: 200px; */
+    padding: 5px;
+    overflow: hidden;
+  }
+
+  #Search-The-Boondocking-Listings {
+  }
+
+  #Search-The-Boondocking-Listings table {
+    border: none;
+  }
+
+  #Search-The-Boondocking-Listings table td {
+    padding: 5px;
+  }
+
+  #Search-The-Boondocking-Listings img {
+rder: medium ridge gray;
+  }
+
+  .page-searchbystate #content .section
+  {
+    min-height: 800px;
+  }
+
+
+  .gm-style .gm-style-iw {
+    font-weight: inherit;
+  }
+
+/***********************/
+/* Membership Benefits */
+/***********************/
+
+.MembershipBenefits {
+  max-width: 900px;
+  margin: 20px auto 40px auto;
+  padding: 15px 25px 5px 25px;
+  border: solid grey 2px;
+}
+
+.MembershipBenefits ul {
+  margin-bottom: 5px;
+}
+
+.MembershipBenefits li {
+  background-image: url(/sites/boondockerswelcome.com/files/media/iconsets/misc/benefitcheck.png);
+  background-repeat: no-repeat;
+  padding-top: 15px;
+  padding-left: 50px;
+  min-height: 50px;
+  list-style: none;
+  margin-left: -10px;
 }
