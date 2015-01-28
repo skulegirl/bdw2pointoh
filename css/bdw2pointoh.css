@@ -17,6 +17,10 @@
   padding-bottom: 5px;
 }
 
+#main-content {
+  margin-top: 1em;
+}
+
 #footer-wrapper {
   border: none;
 }
@@ -25,14 +29,25 @@ a:link, a:visited, a:active, a.active, li a.active {
   font-weight: bold;
 }
 
+.snw-b #site-name, .ssw-b #site-slogan, .ptw-b #page-title, .ntw-b .node-title, .ctw-b .comment-title, .btw-b .block-title {
+  font-weight: normal;
+}
+
 h2.pane-title.block-title,
 .pta-l h1#page-title,
 h1#page-title,
 h1.node-title {
-  font-size: xx-large;
   text-align: center;
+  letter-spacing: -1px;
+  font-weight: normal;
 }
 
+h1#page-title,
+h1.node-title {
+  padding: 20px;
+  font-size: 40px;
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.15);
+}
 .panel-pane h2.pane-title.block-title {
   text-align: left;
 }
@@ -55,6 +70,17 @@ input#edit-submit {
   border: 1px solid #3b4520;
 }
 
+/* Form Settings */
+.form-item .description,
+.text-format-wrapper .description {
+  font-size: .9em;
+  margin: 0 0 .5em 0;
+}
+
+fieldset {
+  margin-top: 20px;
+}
+
 /****************/
 /* Header Items */
 /****************/
@@ -67,7 +93,8 @@ input#edit-submit {
 }
 
 .hl-l .region-header {
-  width: calc(100% - 300px); /* room for logo */
+  width: calc(100% - 270px); /* room for logo */
+  margin-left: 0px;
 }
 
 #header-wrapper .block-logintoboggan {
@@ -76,6 +103,18 @@ input#edit-submit {
 
 #header-wrapper nav .block-inner {
   float: right;
+}
+
+@media screen and (max-width: 400px) {
+  #header-wrapper img.site-logo {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+   .hl-l .region-header {
+    width: inherit;
+   }
 }
 
 /* Menus
@@ -128,21 +167,6 @@ a.social-icons:hover {
 }
 
 
-/* Login Link
------------------------------------------------ */
-/* 
- * No longer needed - using sliding draw instead for login
-
-#block-user-login a {
-  color: #3b4520;
-}
-
-#block-user-login a:hover {
-  opacity: .7;
-  filter:alpha(opacity=70); // For IE8 and earlier 
-}
-*/
-
 /**********************/
 /* Sliding Draw Items */
 /**********************/
@@ -155,15 +179,27 @@ a.social-icons:hover {
   float: right;
 }
 
-#draw-wrapper #block-user-login .form-item {
-}
-
 #draw-wrapper #block-user-login .form-actions input {
   color: white;
   background: inherit;
   font-weight: bold;
   border-width: 2px;
   font-size: medium;
+}
+
+#draw-wrapper .form-item {
+  margin: 0;
+}
+
+#draw-wrapper #user-login-form div div {
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+#draw-wrapper #user-login-form .item-list {
+  display: block;
+  text-align: right;
+  font-size: 15px;
 }
 
 
@@ -215,7 +251,7 @@ a.social-icons:hover {
 /* Top level 
 -----------*/
 #page #content-wrapper {
-  padding-top: 3em;
+  padding-top: 0;
 }
 
 .page-landing-page #block-system-main {
@@ -362,12 +398,12 @@ a.HomePageButton:hover {
   margin: auto;
 }
 
-#mini-panel-landing_page_benefit_panes article.odd .BenefitImage img {
+#mini-panel-landing_page_benefit_panes .odd .BenefitImage img {
   float: left;
   padding-right: 20px;
 }
 
-#mini-panel-landing_page_benefit_panes article.even .BenefitImage img {
+#mini-panel-landing_page_benefit_panes .even .BenefitImage img {
   float: right;
   padding-left: 20px;
 }
@@ -397,11 +433,6 @@ a.HomePageButton:hover {
   padding: 20px 10px;
 }
 
-.TestimonialsPane .block-title {
-  font-size: x-large;
-  text-align: center;
-}
-
 .TestimonialsPane .TestimonialContainer {
   clear: both;
 }
@@ -412,13 +443,15 @@ a.HomePageButton:hover {
   width: 100px;
 }
 
-.TestimonialsPane .TestimonialTitle {
+.TestimonialsPane .TestimonialTitle,
+.MoreTestimonialsPane .TestimonialTitle {
   font-weight: bold;
   text-transform: capitalize;
   font-size: large;
 }
 
-.TestimonialsPane .TestimonialAuthor {
+.TestimonialsPane .TestimonialAuthor,
+.MoreTestimonialsPane .TestimonialAuthor {
   text-align: right;
   width: 90%;
   font-weight: bold;
@@ -427,11 +460,13 @@ a.HomePageButton:hover {
   padding-top: 5px;
 }
 
-.TestimonialsPane .TestimonialContainer.last .TestimonialAuthor {
+.TestimonialsPane .TestimonialContainer.last .TestimonialAuthor, 
+.MoreTestimonialsPane .TestimonialContainer.last .TestimonialAuthor {
   padding-bottom: 0px;
 }
 
-.TestimonialsPane .node {
+.TestimonialsPane .node,
+.MoreTestimonialsPane .node {
   margin-bottom: 0px;
 }
 
@@ -553,6 +588,44 @@ a.HomePageButton:hover {
 .views-field-field-user-photo img {
   float: left;
   padding-right: 5px;
+}
+@media screen and (min-width:700px) {
+  .pane-group-memberships {
+    float: right;
+    max-width: 500px;
+  }
+}
+@media screen and (max-width:699px) {
+  .pane-group-memberships {
+    float: none;
+  }
+}
+
+.GroupMemberships .MembershipBadge {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.GroupMemberships .MembershipBadge img{
+  height: 75px;
+}
+
+div[id^="memberbadge-"] .inner{
+/*  border: 1px solid black; */
+  background-color: black;
+  color: white;
+  border-radius: 7px;
+  padding: 5px;
+  font-size: 18px
+}
+
+div[id^="memberbadge-"] .inner h3{
+  color: white;
+  font-size: 15px;
+}
+
+.class-badgepopup a.popup-close-button {
+  font-size: 12px;
 }
 
 /****************/
@@ -683,8 +756,22 @@ a.HomePageButton:hover {
   }
 }
 
+@media screen and (min-width:480px) and (max-width:1000px)
+{
+  #legend-0-active .popup-element-body table.popup-layout {
+    left: -175px;
+  }
+}
 
-  
+.popup-element-body.class-legend a.popup-close-button {
+  background: none;
+  top: -10px;
+  right: 0px;
+}
+
+.popup-element-body.class-legend a.popup-close-button span {
+  display: block;
+}  
 
 .ServiceIcon.NotAvailable {
   opacity: 0.10;
@@ -722,6 +809,14 @@ a.HomePageButton:hover {
   text-align: center;
   color: white;
   font-size: 17px;
+}
+
+@media screen and (max-width:1121px) {
+  .SiteDetails .RVCount h3, 
+  .SiteDetails .RVSize h3,
+  .SiteDetails .MaxNights h3 {
+    font-size: 12px;
+  }
 }
 
 .SiteDetails .RVCount.LegendIcon h3, 
@@ -823,10 +918,7 @@ section.pane-user-about {
 
 .HowItWorksItem {
   padding: 5px;
-  border: 1px grey solid;
   margin: 20px 5px;
-  background-color: #eeeeee;
-  border-radius: 10px;
 }
 
 .HowItWorksTitle {
@@ -967,6 +1059,8 @@ section.pane-user-about {
   }
 
   #Search-The-Boondocking-Listings {
+    max-width: 800px;
+    margin: auto;
   }
 
   #Search-The-Boondocking-Listings table {
@@ -986,21 +1080,6 @@ section.pane-user-about {
 /*    width: 200px; */
     padding: 5px;
     overflow: hidden;
-  }
-
-  #Search-The-Boondocking-Listings {
-  }
-
-  #Search-The-Boondocking-Listings table {
-    border: none;
-  }
-
-  #Search-The-Boondocking-Listings table td {
-    padding: 5px;
-  }
-
-  #Search-The-Boondocking-Listings img {
-rder: medium ridge gray;
   }
 
   .page-searchbystate #content .section
@@ -1037,3 +1116,305 @@ rder: medium ridge gray;
   list-style: none;
   margin-left: -10px;
 }
+
+/*************************/
+/* Membership Product Page   */
+/*************************/
+
+.section-membership-products #content-wrapper .container {
+  max-width: inherit;
+}
+
+.section-membership-products #main-content {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.section-membership-products #main-content h1#page-title {
+  background-color: #eeeeee;
+  padding: 20px;
+  font-size: 40px;
+  font-weight: normal;
+  letter-spacing: -1px;
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.15);
+}
+
+.section-membership-products #content-wrapper #content {
+  max-width: 1140px;
+  margin: 20px auto;
+}
+
+
+.section-membership-products .membership-option {
+  text-align: center;
+}
+
+.section-membership-products .membership-option .block-content {
+  margin: 10px auto;
+  max-width: 300px;
+}
+
+.section-membership-products .membership-option h2.pane-title.block-title{
+  font-size: large;
+  text-align: center;
+}
+
+.section-membership-products .membership-option .MembershipTypeImg {
+  min-height: 225px;
+  vertical-align: bottom;
+}
+
+.section-membership-products .membership-option .MembershipType {
+  font-weight: bold;
+  font-size: x-large;
+  padding-bottom: 10px;
+}
+
+.section-membership-products #membership-option-host .MembershipType {
+  color: #3d7d7d;
+}
+
+.section-membership-products #membership-option-guest-only .MembershipType {
+  color: #c12e25;
+}
+
+
+.section-membership-products .membership-option .Product {
+  font-weight: bold;
+  font-size: 20px;
+  padding: 3px 0;
+  color: #3b4520;
+}
+
+
+.section-membership-products #membership-option-host .cta-button a {
+  background-color: #3d7d7d;
+}
+
+.section-membership-products #membership-option-host .cta-button a:focus,
+.section-membership-products #membership-option-host .cta-button a:hover {
+  -moz-box-shadow: 0 0 10px 5px rgba(61, 125, 125,  0.5);
+  -webkit-box-shadow: 0 0 10px 5px rgba(61, 125, 125, 0.5);
+  box-shadow: 0 0 10px 5px rgba(61, 125, 125, 0.5);
+}
+
+.section-membership-products #membership-option-guest-only .cta-button a {
+  background-color: #c12e25;
+}
+
+.section-membership-products #membership-option-guest-only .cta-button a:focus,
+.section-membership-products #membership-option-guest-only .cta-button a:hover {
+  -moz-box-shadow: 0 0 10px 5px rgba(193, 46, 37, 0.5);
+  -webkit-box-shadow: 0 0 10px 5px rgba(193, 46, 37, 0.5);
+  box-shadow: 0 0 10px 5px rgba(193, 46, 37, 0.5);
+}
+
+.section-membership-products .region-two-50-second {
+  margin-bottom: 20px;
+}
+
+.section-membership-products .EarlyRenewalBonus {
+  color: red;
+  font-weight: bold;
+}
+
+/* Testimonails on product page */
+
+.section-membership-products .region-two-50-bottom {
+  border-top: 1px solid #e6e6e6;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+@media screen and (max-width:479px) {
+  .section-membership-products .TestimonialContainer {
+    width: inherit;
+    display: block
+    float: none;
+    margin: 10px 5%;
+  }
+}
+@media screen and (min-width:480px) {
+  .section-membership-products .TestimonialContainer {
+    width: 40%;
+    display: table;
+    float: left;
+    margin: 10px 5%;
+  }
+}
+
+.MoreTestimonialsPane .TestimonialImage {
+  float: left;
+  padding-right: 15px;
+  width: 100px;
+}
+
+/* More Information Pane */
+.MoreInformationPane h2 {
+  padding-bottom: 10px;
+}
+
+@media screen and (min-width:1000px) {
+  .MoreInfoOption {
+    display: inline;
+    width: 33%;
+    float: left;
+  }
+}
+@media screen and (max-width:999px) {
+  .MoreInfoOption {
+    display: block;
+    float: none;
+  }
+  .MoreInfoOptions {
+    max-width: 400px;
+    margin: 5px auto;
+  }
+}
+
+.MoreInfoOption img {
+  vertical-align: middle;
+  height: 44px;
+  padding-right: 5px;
+}
+
+/* Individual product pages */
+form.commerce-add-to-cart input, 
+.add-to-cart #edit-actions input, 
+input#edit-checkout, 
+input#edit-continue, 
+input.node-add-to-cart, 
+input.list-add-to-cart {
+}
+
+/*****************/
+/* Full Member Home Page */
+/*************************/
+
+
+.view-news-and-reminders .views-field-title {
+  font-size: 20px;
+  text-shadow: none;
+  text-align: left;
+  padding-left: 0px;
+  text-transform: Capitalize;
+  text-align: center;
+}
+
+.view-news-and-reminders .views-field-created {
+  font-style: italic;
+  padding-bottom: 10px;
+} 
+
+.view-news-and-reminders .views-field-title a {
+  font-weight: normal;
+}
+
+.view-news-and-reminders .views-field-field-featured-image img {
+  width: inherit;
+  float: left;
+  padding-right: 10px;
+  padding-bottom: 5px;
+}
+
+.member-bonuses img {
+  float: right;
+  padding-left: 10px;
+  height: 90px;
+}
+
+.referral-rewards img {
+  float: left;
+  padding-right: 10px;
+  height: 130px;
+}
+
+.recent-news img {
+  float: left;
+  padding-right: 10px;
+}
+
+.view-bda-loc-block .view-content {
+  padding: 10px;
+}
+
+.view-bda-loc-block img{
+  float: right;
+  width: 100px;
+}
+
+.submit-testimonial img {
+  float: right;
+  padding-left: 5px;
+  width: 100px;
+}
+
+/*****
+ * Node specific config 
+ */
+
+.page-node .submitted {
+  font-style: italic;
+}
+
+.node-membership-level img {
+  float: right;
+  padding-left: 10px;
+}
+
+/****
+ * Member Bonuses
+ */
+
+.MemberBonusItem.odd img {
+  padding-right: 20px;
+  float: left;
+}
+
+.MemberBonusItem.even img {
+  padding-left: 10px;
+  float: right;
+}
+
+.MemberBonusItem {
+  clear: both;
+  width: 800px;
+  margin: auto;
+  padding-top: 30px;
+}
+
+/****
+ * News and Reminders
+ */
+
+.view-news-and-reminders .views-row {
+  clear: both;
+  padding-top: 20px;
+}
+
+.view-news-and-reminders .views-row .views-field-title {
+  font-size: 30px;
+  text-align: left;
+}
+
+/****
+ * Messages Block
+ */
+.pane-messages img {
+  float: right;
+  padding-left: 5px;
+  width: 60px;
+}
+
+
+/*************
+ * Forms     *
+ *************/
+
+
+#profile2_profile_form_group_memberships label {
+  display: inline;
+  padding-right: 5px;
+}
+
