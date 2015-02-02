@@ -1140,8 +1140,7 @@ section.pane-user-about {
 }
 
 .section-membership-products #content-wrapper #content {
-  max-width: 1140px;
-  margin: 20px auto;
+  margin: 20px 5px; 
 }
 
 
