@@ -691,6 +691,9 @@ div[id^="memberbadge-"] .inner h3{
   height: 0px;
 } */
 
+.fine-print {
+  font-size:14px;
+}
 
   /* Enable scroll bars (do not hide them) in chrome */
   .view-searchlocationresults ::-webkit-scrollbar,
@@ -1143,6 +1146,10 @@ section.pane-user-about {
   margin: 20px 5px; 
 }
 
+.section-membership-products #content-wrapper #content .node-inner {
+  margin: 0px auto;
+  max-width: 1140px;
+}
 
 .section-membership-products .membership-option {
   text-align: center;
