@@ -148,15 +148,39 @@ a.social-icons:hover {
   filter:alpha(opacity=70); /* For IE8 and earlier */
 }
 
-/* Search Bar
------------------------------------------------ */
-#block-google-cse-google-cse label {
-  visibility: hidden;
-  height: 0px;
+#block-block-5 {
+ float: right;
 }
 
-#google-cse-results-searchbox-form input {
-  border-color: #3b4520;
+#block-block-5 .block-inner.clearfix {
+  margin: 5px 0px;
+}
+
+
+/* Search Bar
+----------------------------------------------- */
+#block-search-form  {
+  float: right;
+}
+
+#block-search-form a.popup-element-title:hover {
+  opacity: .7;
+  filter:alpha(opacity=70); /* For IE8 and earlier */
+}
+
+#block-search-form .block-inner.clearfix {
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+#block-search-form .popup-element-title {
+  background: none;
+  padding-right: 0;
+}
+
+form.google-cse input#edit-submit--2,
+form.google-cse input#edit-search-block-form--2 {
+  width: 150px;
   color: #3b4520;
 }
 
