@@ -148,14 +148,29 @@ a.social-icons:hover {
   filter:alpha(opacity=70); /* For IE8 and earlier */
 }
 
+#block-block-5 {
+ float: right;
+}
+
+#block-block-5 .block-inner.clearfix {
+  margin: 5px 0px;
+}
+
+
 /* Search Bar
 ----------------------------------------------- */
 #block-search-form  {
   float: right;
 }
 
+#block-search-form .block-inner.clearfix {
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
 #block-search-form .popup-element-title {
   background: none;
+  padding-right: 0;
 }
 
 form.google-cse input#edit-submit--2,
