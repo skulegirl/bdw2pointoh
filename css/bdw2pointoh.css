@@ -150,13 +150,17 @@ a.social-icons:hover {
 
 /* Search Bar
 ----------------------------------------------- */
-#block-google-cse-google-cse label {
-  visibility: hidden;
-  height: 0px;
+#block-search-form  {
+  float: right;
 }
 
-#google-cse-results-searchbox-form input {
-  border-color: #3b4520;
+#block-search-form .popup-element-title {
+  background: none;
+}
+
+form.google-cse input#edit-submit--2,
+form.google-cse input#edit-search-block-form--2 {
+  width: 150px;
   color: #3b4520;
 }
 
