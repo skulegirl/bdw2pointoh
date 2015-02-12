@@ -1319,6 +1319,11 @@ section.pane-user-about {
   padding-right: 5px;
 }
 
+.PricingFinePrint {
+  text-align: center;
+  font-style: italic;
+}
+
 /* Individual product pages */
 form.commerce-add-to-cart input, 
 .add-to-cart #edit-actions input, 
