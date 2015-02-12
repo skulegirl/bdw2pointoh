@@ -1061,6 +1061,16 @@ section.pane-user-about {
     overflow: hidden;
   }
 
+  .view-all-users-map .view-content a:visited,
+  .search-results a:visited {
+    color: inherit;
+  }
+
+  .view-all-users-map .view-content a:visited,
+  .search-results a:visited {
+    color: #e0423a; 
+  }
+
   #Search-The-Boondocking-Listings {
     max-width: 800px;
     margin: auto;

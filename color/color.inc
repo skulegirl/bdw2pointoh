@@ -168,8 +168,8 @@ $info = array (
       'colors' => 
       array (
         'base' => '#ffffff',
-        'link' => '#3b4520',
-        'hover' => '#f0b533',
+        'link' => '#AB832B',
+        'hover' => '#3b4520',
         'text' => '#555555',
         'titles' => '#3b4520',
         'borders' => '#505739',
