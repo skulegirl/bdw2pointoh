@@ -215,9 +215,22 @@ form.google-cse input#edit-search-block-form--2 {
   margin: 0;
 }
 
+#draw-wrapper #user-login-form .class-help {
+  vertical-align: top;
+  padding-left: 0px;
+}
+
+#draw-wrapper #user-login-form .class-help a {
+  background: none;
+}
+
+#draw-wrapper #user-login-form .class-help img{
+  width: 15px;
+}
+
 #draw-wrapper #user-login-form div div {
   display: inline-block;
-  padding: 0px 10px;
+  padding: 0px 0px 0px 10px;
 }
 
 #draw-wrapper #user-login-form .item-list {
@@ -225,6 +238,8 @@ form.google-cse input#edit-search-block-form--2 {
   text-align: right;
   font-size: 15px;
 }
+
+
 
 
 /****************/
