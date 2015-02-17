@@ -74,3 +74,39 @@ function bdw2pointoh_lt_login_link($variables) {
   return t('Login');
 }
 
+/**
+ * Implementation of HOOK_theme().
+ */
+function bdw2pointoh_theme($existing, $type, $theme, $path) {
+  // Add your theme hooks like this:
+  /*
+  $hooks['hook_name_here'] = array( // Details go here );
+  */
+  $hooks['user_login'] = array(
+    'render element' => 'form',
+    'path' => drupal_get_path('theme', 'bdw2pointoh') . '/templates',
+    'template' => 'user-login',
+    'preprocess functions' => array(
+      'bdw2pointoh_preprocess_user_login'
+    ),
+  );
+
+  $hooks['user_pass'] = array(
+    'render element' => 'form',
+    'path' => drupal_get_path('theme', 'bdw2pointoh') . '/templates',
+    'template' => 'user-pass',
+    'preprocess functions' => array(
+      'bdw2pointoh_preprocess_user_pass'
+    ),
+  );
+  return $hooks;
+}
+
+function bdw2pointoh_preprocess_user_login(&$variables) {
+   $variables['intro_text'] = t('Login to your BoondockersWelcome account');
+}
+
+function bdw2pointoh_preprocess_user_pass(&$variables) {
+   $variables['intro_text'] = t('Forgotten your password? No problem. Enter your uesrname or email address below, and we\'ll send a one-time login link to the email addres you have listed in your account. From there you can reset your password to whatever you wish.');
+}
+
