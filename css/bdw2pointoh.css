@@ -1349,6 +1349,9 @@ input#edit-checkout,
 input#edit-continue, 
 input.node-add-to-cart, 
 input.list-add-to-cart {
+  font-size: large;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 /*****************/
