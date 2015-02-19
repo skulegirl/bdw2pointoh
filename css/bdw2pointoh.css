@@ -148,11 +148,11 @@ a.social-icons:hover {
   filter:alpha(opacity=70); /* For IE8 and earlier */
 }
 
-#block-block-5 {
+.social-media-icons-block {
  float: right;
 }
 
-#block-block-5 .block-inner.clearfix {
+.social-media-icons-block .block-inner.clearfix {
   margin: 5px 0px;
 }
 
