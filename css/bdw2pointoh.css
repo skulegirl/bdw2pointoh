@@ -301,6 +301,7 @@ form.google-cse input#edit-search-block-form--2 {
   padding: 10px;
   background-color: #3b4520;
   color: #ffffff !important;
+  border-radius: 5px;
 }
 
 a.HomePageButton:hover {
@@ -368,7 +369,7 @@ a.HomePageButton:hover {
   font-size: 35px;
 }
 #MainHeadline h2 {
-  font-size: 28px;
+  font-size: 25px;
 }
 }
 
@@ -428,7 +429,7 @@ a.HomePageButton:hover {
 #mini-panel-landing_page_benefit_panes .block {
   max-width: 700px;
   margin: auto;
-  padding: 10px 0;
+  padding: 10px 0 20px;
 }
 
 #mini-panel-landing_page_benefit_panes .panel-separator {
@@ -447,6 +448,12 @@ a.HomePageButton:hover {
   padding-left: 20px;
 }
 
+@media screen and (max-width:700px) {
+#mini-panel-landing_page_benefit_panes .BenefitImage img {
+  max-width: 50%;
+}
+}
+
 
 #mini-panel-landing_page_benefit_panes .block,
 #mini-panel-landing_page_benefit_panes .node {
@@ -460,6 +467,7 @@ a.HomePageButton:hover {
 #mini-panel-landing_page_benefit_panes .pane-title,
 #mini-panel-landing_page_benefit_panes .CallToAction {
   text-align: center;
+  font-weight: 800;
 }
 
 
@@ -550,9 +558,17 @@ a.HomePageButton:hover {
   display: inline;
 }
 
+@media screen and (min-width:700px) {
 .AsFeaturedInLogo img{
  padding: 10px;
  height: 50px;
+}
+}
+@media screen and (max-width:699px) {
+.AsFeaturedInLogo img{
+ padding: 5px;
+ height: 30px;
+}
 }
 
 #as-seen-in .block-content {
