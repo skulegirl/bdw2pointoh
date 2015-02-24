@@ -34,7 +34,7 @@
     <div id="center" style="width:700px;">
       <div id="logo" style="float: left; margin: 10px; display: inline">
         <a href="https://www.boondockerswelcome.com">
-          <img src="http://dev.boondockerswelcome.com/sites/boondockerswelcome.com/files/logoImages/BDWNewLogoTag.jpg" alt="Home" style="border:0;" />
+          <img src="https://www.boondockerswelcome.com/sites/boondockerswelcome.com/files/logoImages/BDWNewLogoTag.jpg" alt="Home" style="border:0;" />
       </a>
       </div>
       <div id="subject" style="display:inline">
@@ -44,10 +44,10 @@
       </div>
       <div id="social-icons" style="float:right; display: inline">
 	 <div id="facebook" style="display:inline">
-	  <a href="https://www.facebook.com/BoondockersWelcome"><img src="http://dev.boondockerswelcome.com/sites/boondockerswelcome.com/files/media/iconsets/social/facebook32x32.png" alt="Facebook"></a>
+	  <a href="https://www.facebook.com/BoondockersWelcome"><img src="https://www.boondockerswelcome.com/sites/boondockerswelcome.com/files/media/iconsets/social/facebook32x32.png" alt="Facebook"></a>
 	 </div>
 	 <div id="contact-us" style="display:inline">
-	  <a href="https://www.boondockerswelcome.com/contact"><img src="http://dev.boondockerswelcome.com/sites/boondockerswelcome.com/files/media/iconsets/social/email32x32.png" atl="Contact Us"></a>
+	  <a href="https://www.boondockerswelcome.com/contact"><img src="https://www.boondockerswelcome.com/sites/boondockerswelcome.com/files/media/iconsets/social/email32x32.png" atl="Contact Us"></a>
 	 </div>
       </div>
       <div id="main" style="clear: both; padding: 10px"> 
