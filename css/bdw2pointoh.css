@@ -1398,6 +1398,7 @@ input.list-add-to-cart {
   float: left;
   padding-right: 10px;
   padding-bottom: 5px;
+  max-width: 40%;
 }
 
 .member-bonuses img {
