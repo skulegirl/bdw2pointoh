@@ -14,7 +14,7 @@
           obj.bind("maptypechange", function () {
             var map = obj.map;
             window.setTimeout(function() {
-              if (location.pathname != "/showAllUsersMap")
+              if (location.pathname != "/all-boondocking-locations")
               {
                return;
               }

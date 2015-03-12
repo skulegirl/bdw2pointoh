@@ -1356,6 +1356,11 @@ section.pane-user-about {
 .PricingFinePrint {
   text-align: center;
   font-style: italic;
+  font-weight: bold;
+  font-size: larger;
+}
+.node-membership-level .PricingFinePrint {
+  text-align: left;
 }
 
 /* Individual product pages */
@@ -1374,32 +1379,6 @@ input.list-add-to-cart {
 /* Full Member Home Page */
 /*************************/
 
-
-.view-news-and-reminders .views-field-title {
-  font-size: 20px;
-  text-shadow: none;
-  text-align: left;
-  padding-left: 0px;
-  text-transform: Capitalize;
-  text-align: center;
-}
-
-.view-news-and-reminders .views-field-created {
-  font-style: italic;
-  padding-bottom: 10px;
-} 
-
-.view-news-and-reminders .views-field-title a {
-  font-weight: normal;
-}
-
-.view-news-and-reminders .views-field-field-featured-image img {
-  width: inherit;
-  float: left;
-  padding-right: 10px;
-  padding-bottom: 5px;
-  max-width: 40%;
-}
 
 .member-bonuses img {
   float: right;
@@ -1477,14 +1456,45 @@ input.list-add-to-cart {
  * News and Reminders
  */
 
+.view-past-newsletters .views-row,
 .view-news-and-reminders .views-row {
+  min-height: 320px;
+  padding-right: 10px;
+  padding-left: 10px;
   clear: both;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
-.view-news-and-reminders .views-row .views-field-title {
+.view-past-newsletters .views-row.views-row-odd,
+.view-news-and-reminders .views-row.views-row-odd {
+  background-color: #eeeeee;
+}
+
+.view-past-newsletters .node-title,
+.view-news-and-reminders .views-field-title {
   font-size: 30px;
+  text-shadow: none;
   text-align: left;
+  padding-left: 0px;
+  text-transform: Capitalize;
+  text-align: left;
+}
+
+.view-news-and-reminders .views-field-created {
+  font-style: italic;
+  padding-bottom: 10px;
+} 
+
+.view-news-and-reminders .views-field-title a {
+  font-weight: normal;
+}
+
+.view-news-and-reminders .views-field-field-featured-image img {
+  width: inherit;
+  float: left;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  max-width: 40%;
 }
 
 /****
@@ -1642,5 +1652,5 @@ form#searchuserbyloc-form fieldset {
  ******/
 
 #google-cse-results iframe {
-  width: auto;
+/*  width: auto; */
 }
