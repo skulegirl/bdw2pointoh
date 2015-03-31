@@ -1299,6 +1299,15 @@ section.pane-user-about {
   font-weight: bold;
 }
 
+.section-membership-products .HostRewards {
+  color: #3d7d7d;
+  font-weight: bold;
+}
+
+.section-membership-products .HostRewards .ExtraEm {
+  font-size: x-large;
+}
+
 /* Testimonails on product page */
 
 .section-membership-products .region-two-50-bottom {
