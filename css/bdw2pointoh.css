@@ -926,6 +926,13 @@ div[id^="memberbadge-"] .inner h3{
   padding: 10px;
 }
 
+.pane-user-recommendations-and-respons .view-user-recommendations .more-link {
+  text-align: left;
+}
+.pane-user-recommendations-and-respons .view-user-recommendations .view-footer {
+  text-align: right;
+}
+
 .adr .region {
   float: inherit !important;
 }
@@ -1654,3 +1661,5 @@ form#searchuserbyloc-form fieldset {
 #google-cse-results iframe {
 /*  width: auto; */
 }
+
+
