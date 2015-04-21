@@ -1513,6 +1513,12 @@ input.list-add-to-cart {
   max-width: 40%;
 }
 
+.view-news-and-reminders img.summit {
+  float:left; 
+  width:720px;
+  margin-right: 10px;
+}
+
 /****
  * Messages Block
  */
@@ -1668,7 +1674,6 @@ form#searchuserbyloc-form fieldset {
  ******/
 
 #google-cse-results iframe {
-/*  width: auto; */
 }
 
 
