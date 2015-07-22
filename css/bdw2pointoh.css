@@ -1389,10 +1389,11 @@ section.pane-user-about {
   font-style: italic;
   font-weight: bold;
   font-size: larger;
+  padding-bottom: 10px;
 }
-.node-membership-level .PricingFinePrint {
+/*.node-membership-level .PricingFinePrint {
   text-align: left;
-}
+}*/
 
 /* Individual product pages */
 form.commerce-add-to-cart input, 
