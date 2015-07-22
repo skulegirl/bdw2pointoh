@@ -133,6 +133,21 @@ fieldset {
   color: white;
 }
 
+/* Country select
+------------------*/
+.block-country-masquerade {
+  float: right;
+}
+
+.block-country-masquerade .form-item-country-dropdown-select {
+  margin: 5px 0;
+  padding: 0 10px 0 0;
+}
+
+#block-uc-multiprice-country-masquerade {
+  margin: 5px 0;
+}
+
 /* Social Icons 
 ----------------------------------------------- */
 a.social-icons img {
