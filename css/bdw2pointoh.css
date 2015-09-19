@@ -532,6 +532,19 @@ a.HomePageButton:hover {
   margin-bottom: 0px;
 }
 
+.TestimonialFooter {
+  clear: both;
+  text-align: center;
+  font-size: x-large;
+  padding: 20px;
+  font-style: italic;
+}
+
+.TestimonialFooter a {
+  color: #3b4520;
+  text-decoration: underline;
+}
+
 /* How it works block 
 --------------------*/
 #HowItWorks h2.pane-title {

@@ -1,0 +1,126 @@
+/*******************************
+/* Search Results Formatting */
+/*******************************/
+
+/**Search Result formatting **/
+  .BookmarkedMembersMapView .attachment-before
+  {
+    padding: 0px 10px 0px 0px;
+  }
+
+  .BookmarkedMembersMapView .view-content
+  {
+    padding: 0;
+    margin: 0 0 -10px 0;
+    min-height: 200px;
+  }
+
+  .BookmarkedMembersMapView .view-content .item-list
+  {
+/*    height: 600px; */
+    overflow: auto;
+    padding: 5px;
+    font-size: 12px;
+    margin-top: 10px;
+    /* line-height: 1.3em; */
+  }
+
+  .BookmarkedMembersMapView  ol
+  {
+    
+  }
+
+  .BookmarkedMembersMapView li {
+    margin: 10px 5px;
+    width: 250px;
+    float: left;
+    min-height: 100px;
+  }
+
+
+  .BookmarkedMembersMapView .item-list ul li
+  {
+    padding: 0 0 10px 0;
+  }
+
+  .BookmarkedMembersMapView .item-list .field-content
+  {
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+
+  .BookmarkedMembersMapView .attachment .search-results .item-list .pager
+  {
+    display: none;
+  }
+
+@media screen and (max-width: 539px) {
+  .BookmarkedMembersMapView .attachment {
+    float: none;
+    margin: 0 10px;
+  }
+
+  .BookmarkedMembersMapView .view-content .item-list {
+    min-width: none;
+    float: none;
+    height: inherit;
+  }
+}
+
+/*
+@media screen and (min-width: 540px) {
+  .BookmarkedMembersMapView .attachment
+  {
+    float: right;
+    width: 70%;
+  }
+  
+  .BookmarkedMembersMapView .view-content .item-list { 
+    width: 28%;
+    float: left;
+  }
+}
+*/
+
+  .BookmarkedMembersMapView .item-list .pager
+  {
+    color: blue;
+    font-size: 20px;
+    padding: 20px 0 0 0;
+  }
+
+  .BookmarkedMembersMapView .item-list .pager a
+  {
+    color: #3B4520;
+    font-size: 20px;
+    padding: 0px 5px;
+  }
+
+  .BookmarkedMembersMapView .item-list .pager-current 
+  {
+    color: grey;
+    font-weight: normal;
+    padding: 0px 5px;
+  }
+
+
+  .BookmarkedMembersMapView .views-field-field-user-photo-fid
+  {
+    float: right;
+/*    width: 200px; */
+    padding: 5px;
+    overflow: hidden;
+  }
+
+  .BookmarkedMembersMapView a:visited {
+    color: inherit;
+  }
+
+  .BookmarkedMembersMapView a:visited {
+    color: #e0423a; 
+  }
+
+@media screen and (max-width: 540px) {
+  .BookmarkedMembersMapView .gmap-map {
+    height: 300px !important;
+  }

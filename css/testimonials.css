@@ -1,0 +1,66 @@
+/**
+ * Footheme footheme.css
+ *
+ * Use this file to add your custom styles.
+ *
+ * You can change the name of this file, just
+ * remember to update the name in the info file
+ * as well.
+ */
+
+
+/* Testimonials and Fetured Hosts Block 
+--------------------------------------*/
+
+.TestimonialsPage {
+  padding: 20px 0px;
+}
+
+.TestimonialsPage .views-row {
+  clear: both;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 400px) {
+.TestimonialsPage .views-row {
+  padding-left: 10%;
+  padding-right: 10%;
+  }
+}
+  
+
+.TestimonialsPage .TestimonialImage {
+  float: left;
+  padding-right: 15px;
+  width: 150px;
+}
+
+.TestimonialsPage .TestimonialImage img {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px; 
+}
+
+.TestimonialsPage .TestimonialTitle {
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: x-large;
+}
+
+.TestimonialsPage .TestimonialAuthor {
+  float: right;
+  font-weight: bold;
+  font-style: italic;
+  padding-bottom: 15px;
+  padding-top: 0px;
+  margin-top: -10px;
+}
+
+.TestimonialsPage .TestimonialContainer.last .TestimonialAuthor {
+  padding-bottom: 0px;
+}
+
+.TestimonialsPage .node {
+  margin-bottom: 0px;
+}
