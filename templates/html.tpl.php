@@ -79,27 +79,20 @@ t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
 document,'script','//connect.facebook.net/en_US/fbevents.js');
 
 fbq('init', '963841180324283');
-fbq('track', 'Purchase', {value: '0.00', currency: 'USD'});
+fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=963841180324283&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Facebook Pixel Code -->
 
-<!-- Begin Improvely Conversion Tracking Code -->
-<script type="text/javascript" src="https://boondockerswelcome.iljmp.com/improvely.js"></script>
+<!-- Begin Improvely Tracking Code -->
 <script type="text/javascript">
-improvely.init('boondockerswelcome', 1);
-improvely.conversion({
-		goal: 'sale',
-		revenue: 1.,
-		reference: '123'
-});
+var im_domain = 'boondockerswelcome';
+var im_project_id = 1;
+(function(e,t){window._improvely=[];var n=e.getElementsByTagName("script")[0];var r=e.createElement("script");r.type="text/javascript";r.src="https://"+im_domain+".iljmp.com/improvely.js";r.async=true;n.parentNode.insertBefore(r,n);if(typeof t.init=="undefined"){t.init=function(e,t){window._improvely.push(["init",e,t])};t.goal=function(e){window._improvely.push(["goal",e])};t.conversion=function(e){window._improvely.push(["conversion",e])};t.label=function(e){window._improvely.push(["label",e])}}window.improvely=t;t.init(im_domain,im_project_id)})(document,window.improvely||[])
 </script>
-<noscript>
-<img src="https://boondockerswelcome.iljmp.com/track/conversion?project=1&goal=sale&revenue=9.95&reference=123" width="1" height="1" />
-</noscript>
-<!-- End Improvely Conversion Trackng Code -->
+<!-- End Improvely Tracking Code -->
 
 </head>
 <body class="<?php print $classes; ?>"<?php print $attributes; ?>>
