@@ -1707,4 +1707,11 @@ form#searchuserbyloc-form fieldset {
 #google-cse-results iframe {
 }
 
+/*****
+ * Miscellaneous
+ *****/
 
+.privacy-warning {
+  font-weight: bold;
+  color: red;
+}
