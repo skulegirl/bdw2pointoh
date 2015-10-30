@@ -636,6 +636,79 @@ a.HomePageButton:hover {
   height: 150px;
 }
 
+/* Recent User Reccomendations Block */
+#RecentRecommendations {
+  background: url(/sites/boondockerswelcome.com/files/media/LandingPageImages/FrugalRVTravelPicBanner.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 30px;
+  margin-bottom: 40px;
+}
+
+#RecentRecommendations .mod-header {
+  padding: 50px 10px 0px 10px;
+}
+
+#RecentRecommendations .mod-header h2{
+  color: white;
+  text-align: center;
+  font-size: x-large;
+}
+ 
+#RecentRecommendations .mod-header .block-content{
+  color: white;
+  width: 90%;
+  margin: 20px auto;
+}
+
+  #RecentRecommendations .mod-header .block-content{
+    font-size: 125%;
+  }
+
+#RecentRecommendations .mod-content {
+  background-color: #E3E9EE;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: -20px;
+  background-image: url(/sites/boondockerswelcome.com/files/media/LandingPageImages/BoondockersWelcomeBWWatermark.png);
+  background-repeat: no-repeat;
+  background-size: 37%;
+  background-position: 50% 94%;
+}
+#RecentRecommendations .mod-content .flexslider {
+  background: inherit;
+  border: none;
+  box-shadow: none;
+}
+
+#RecentRecommendations .mod-content .views-field-title {
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 20px;
+}
+
+#RecentRecommendations .mod-content .views-field-title a {
+  font-style: italic;
+}
+
+#RecentRecommendations .mod-content .views-field-body {
+  padding: 20px;
+  text-align: center;
+}
+
+#RecentRecommendations .mod-content .views-field-created {
+  float: right;
+  margin-top: 20px;
+}
+
+#RecentRecommendations .mod-content .views-field-created .views-label {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+
+#RecentRecommendations .mod-content p {
+  display: inline;
+}
 
 /****************/
 /* User Page    */
