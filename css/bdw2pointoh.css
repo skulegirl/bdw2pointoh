@@ -578,10 +578,35 @@ a.HomePageButton:hover {
  color: #3b4520;
 }
 
+@media screen and (min-width:827px) {
 #AsFeaturedInContent {
   text-align: center;
   max-width: 1000px;
   margin: auto;
+}
+}
+@media screen and (max-width:826px) and (min-width:502px) {
+#AsFeaturedInContent {
+  text-align: center;
+  max-width: 650px;
+  margin: auto;
+}
+}
+
+@media screen and (max-width:501px) and (min-width:428px) {
+#AsFeaturedInContent {
+  text-align: center;
+  max-width: 400px;
+  margin: auto;
+}
+}
+
+@media screen and (max-width:427px) {
+#AsFeaturedInContent {
+  text-align: center;
+  max-width: 300px;
+  margin: auto;
+}
 }
 
 .AsFeaturedInLogo {
@@ -593,11 +618,20 @@ a.HomePageButton:hover {
  padding: 10px;
  height: 50px;
 }
+.AsFeaturedInLogo.EnlargeLogo img {
+ padding: 10px;
+ height: 70px;
 }
+}
+
 @media screen and (max-width:699px) {
 .AsFeaturedInLogo img{
  padding: 5px;
  height: 30px;
+}
+.AsFeaturedInLogo.EnlargeLogo img{
+ padding: 5px;
+ height: 42px;
 }
 }
 
