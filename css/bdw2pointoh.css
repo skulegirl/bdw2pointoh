@@ -1822,3 +1822,30 @@ form#searchuserbyloc-form fieldset {
   font-weight: bold;
   color: red;
 }
+
+/*******
+ * Checklist page
+ */
+
+.page-checklist fieldset.form-wrapper legend {
+  display: none;
+}
+
+.page-checklist #checklist-page-description {
+  font-size: large;
+  color: red;
+}
+.page-checklist .checklists {
+  box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.07);
+}
+
+.page-checklist .checklists fieldset.form-wrapper {
+  border:none;
+  padding: 0px 20px;
+  margin: 5px 0px;
+  box-shadow: none;
+}
+
+.checklist {
+  margin-top: 0.5em;
+}
