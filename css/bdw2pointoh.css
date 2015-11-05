@@ -1823,6 +1823,10 @@ form#searchuserbyloc-form fieldset {
   color: red;
 }
 
+.page-messages #tasks .action-links {
+  display: none;
+}
+
 /*******
  * Checklist page
  */
