@@ -86,21 +86,6 @@ src="https://www.facebook.com/tr?id=963841180324283&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Facebook Pixel Code -->
 
-<!-- Begin Improvely Conversion Tracking Code -->
-<script type="text/javascript" src="https://boondockerswelcome.iljmp.com/improvely.js"></script>
-<script type="text/javascript">
-improvely.init('boondockerswelcome', 1);
-improvely.conversion({
-		goal: 'sale',
-		revenue: 1.,
-		reference: '123'
-});
-</script>
-<noscript>
-<img src="https://boondockerswelcome.iljmp.com/track/conversion?project=1&goal=sale&revenue=9.95&reference=123" width="1" height="1" />
-</noscript>
-<!-- End Improvely Conversion Trackng Code -->
-
 </head>
 <body class="<?php print $classes; ?>"<?php print $attributes; ?>>
   <div id="skip-link" class="nocontent">

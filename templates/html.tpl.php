@@ -86,14 +86,6 @@ src="https://www.facebook.com/tr?id=963841180324283&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Facebook Pixel Code -->
 
-<!-- Begin Improvely Tracking Code -->
-<script type="text/javascript">
-var im_domain = 'boondockerswelcome';
-var im_project_id = 1;
-(function(e,t){window._improvely=[];var n=e.getElementsByTagName("script")[0];var r=e.createElement("script");r.type="text/javascript";r.src="https://"+im_domain+".iljmp.com/improvely.js";r.async=true;n.parentNode.insertBefore(r,n);if(typeof t.init=="undefined"){t.init=function(e,t){window._improvely.push(["init",e,t])};t.goal=function(e){window._improvely.push(["goal",e])};t.conversion=function(e){window._improvely.push(["conversion",e])};t.label=function(e){window._improvely.push(["label",e])}}window.improvely=t;t.init(im_domain,im_project_id)})(document,window.improvely||[])
-</script>
-<!-- End Improvely Tracking Code -->
-
 </head>
 <body class="<?php print $classes; ?>"<?php print $attributes; ?>>
   <div id="skip-link" class="nocontent">
