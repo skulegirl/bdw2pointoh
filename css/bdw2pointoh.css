@@ -1574,13 +1574,24 @@ input.list-add-to-cart {
   font-style: italic;
 }
 
+.node-product img,
 .node-membership-level img {
   float: right;
   padding-left: 10px;
 }
 
+.node-product .sell-price {
+  font-weight: bold;
+}
+
 @media screen and (max-width: 400px) {
   .node-membership-level img {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .node-product img {
     width: 50%;
   }
 }
