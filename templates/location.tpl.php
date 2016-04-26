@@ -2,6 +2,8 @@
   <div class="adr">
     <?php if (!empty($name)): ?>
       <span class="fn"><?php print $name; ?></span>
+    <?php else: ?>
+      <span class="fn" style="display:none">Boondocking Location</span>
     <?php endif; ?>
     <?php if (!empty($street) || !empty($additional)): ?>
       <div class="street-address">

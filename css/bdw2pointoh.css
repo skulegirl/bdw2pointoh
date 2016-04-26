@@ -865,6 +865,15 @@ div[id^="memberbadge-"] .inner h3{
   }
 }
 
+.cta-button-smaller {
+  margin: 10px 0;
+  text-align: left;
+}
+
+.cta-button-smaller a {
+  margin: 0;
+  font-size: large;
+}
 
 .cta-button a:focus,
 .cta-button a:hover {
@@ -1864,3 +1873,40 @@ form#searchuserbyloc-form fieldset {
 .checklist {
   margin-top: 0.5em;
 }
+
+/* Sidebars (Resources page) */
+
+@media screen and (min-width: 660px) {
+#right-of-sidebar {
+  float:right;
+  width: 75%;
+}
+#floating-sidebar-container {
+  float:left;
+  width: 25%;
+}
+}
+
+.resource-list h3 {
+  padding-top: 15px;
+}
+
+.resource-list h1,
+#floating-sidebar h1{
+  padding-top: 20px;
+}
+
+img.resource-image {
+  margin-bottom: -20px;
+}
+
+.resource-item {
+  border-bottom: #eeeeee 7px groove;
+  padding: 20px 0;
+}
+
+.resource-item .cta-button {
+  padding-top: 5px;
+}
+
+
