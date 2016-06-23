@@ -1903,6 +1903,7 @@ img.resource-image {
 .resource-item {
   border-bottom: #eeeeee 7px groove;
   padding: 20px 0;
+  margin-left: 40px;
 }
 
 .resource-item .cta-button {
