@@ -840,6 +840,7 @@ div[id^="memberbadge-"] .inner h3{
 .cta-button {
   margin-top: 35px;
   text-align: center;
+  display: flex;
 }
 
 .cta-button a {
@@ -847,9 +848,9 @@ div[id^="memberbadge-"] .inner h3{
   border: 1px solid #3b4520;
   border-radius: 6px;
   background-color: #70833d;
-  margin: 10px;
+  margin: 10px auto;
   color: white;
-  white-space:nowrap;
+ # white-space:nowrap;
 }
 
 @media screen and (max-width:410px)
