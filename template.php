@@ -111,7 +111,8 @@ function bdw2pointoh_theme($existing, $type, $theme, $path) {
 }
 
 function bdw2pointoh_preprocess_user_login(&$variables) {
-   $variables['intro_text'] = t('Login to your BoondockersWelcome account');
+   $variables['intro_text'] = t("<div style='font-size:large'>Login to your Boondockers Welcome account.</div> <div style='font-weight:bold;font-size:large'>If you're not yet a member, visit our <a href='/membership-products/'>membership page</a> to learn about becoming one.</div>");
+
 }
 
 function bdw2pointoh_preprocess_user_pass(&$variables) {
