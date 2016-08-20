@@ -15,8 +15,6 @@
  */
 
 drupal_add_js(libraries_get_path('jquery.cookie') . '/jquery.cookie.js', 'file');
-drupal_add_js(drupal_get_path('theme', 'bdw2pointoh') . '/js/gmap_remember_zoom.js','file');
-
 
 
 /**
