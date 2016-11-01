@@ -48,7 +48,16 @@
 
             <?php if ($thank_you_message): ?>
             <p><b><?php print t('Thanks for your order, !order_first_name!', array('!order_first_name' => $order_first_name)); ?></b></p>
-
+            <?php 
+            $send_username = FALSE;
+            foreach($order->products as $product) {
+              if (isset($product->data['type']) && ($product->data['type'] == 'membership_level')) {
+                // then a product is membership, include account details
+                $send_username = TRUE;
+                break;
+              }
+            }
+            if ($send_username): ?>
             <?php if (isset($order->data['new_user'])): ?>
             <p><b><?php print t('An account has been created for you with the following details:'); ?></b></p>
             <p><b><?php print t('Username:'); ?></b> <?php print $order_new_username; ?><br />
@@ -59,6 +68,7 @@
             <?php print t('If you need to check the status of your order, please visit our home page at !store_link and click on "My account" in the menu or login with the following link:', array('!store_link' => $store_link)); ?>
             <br /><br /><?php print $site_login_link; ?></p>
             <?php endif; ?>
+            <?php endif; // end of $send_username?>
 
             <table cellpadding="4" cellspacing="0" border="0" width="100%" style="font-family: verdana, arial, helvetica; font-size: small;">
               <tr>
